@@ -138,8 +138,17 @@ class Spectrum(object):
             #check if we should use the single or mutliple region version
             if len(index) == 4: 
                 numeratorIndex = np.where( self._wavelength > index[0] and self._wavelength < index[1])
+                nnum=len(numeratorIndex)
                 denominatorIndex = np.where( self._wavelength > index[2] and self._wavelength < index[3])
+                ndenom=len(denominatorIndex)
                 
+                if nnum > 1 and ndenom > 1:
+                    nummean
+                    denmean
+                    
+                    if denmean > 0:
+                        index=nummean/denmean
+            
                 
             elif len(index) == 8: 
                 
